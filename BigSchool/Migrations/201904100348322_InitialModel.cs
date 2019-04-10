@@ -3,7 +3,7 @@ namespace BigSchool.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class KhoiTaoModel : DbMigration
+    public partial class InitialModel : DbMigration
     {
         public override void Up()
         {
