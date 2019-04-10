@@ -7,7 +7,8 @@ using System.Web;
 namespace BigSchool.Models
 {
     public class Course
-    {
+    { 
+        //rhrrhrh
         public int Id { get; set;}
         public ApplicationUser Lecterer { get; set; }
         [Required]
