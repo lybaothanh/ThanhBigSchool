@@ -29,7 +29,7 @@ namespace BigSchool.Controllers
                     FolloweeId = followingDto.FolloweeId
                 };
                 _dbContext.Followings.Add(folowing);
-                _dbContext.SaveChanges();
+                _dbContext.SaveChanges();  
                 return Ok();
             }
         }

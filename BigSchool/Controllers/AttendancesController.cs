@@ -39,17 +39,12 @@ namespace BigSchool.Controllers
             var attendance = new Attendance
                 {
                     CourseId = attendanceDto.CourseId,
-                    AttendeeId = UserId()
+                    AttendeeId = User.Identity.GetUserId()
                 };
                 _dbContext.Attendances.Add(attendance);
                 _dbContext.SaveChanges();
                 return Ok();
             }
-
-        private string UserId()
-        {
-            throw new NotImplementedException();
-        }
     }
     }
 
